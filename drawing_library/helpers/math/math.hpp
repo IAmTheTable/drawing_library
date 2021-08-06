@@ -12,7 +12,7 @@ struct Vector2
 		*this = vec;
 	}
 
-	Vector2& operator =(Vector2& vec)
+	Vector2 operator =(Vector2& vec)
 	{
 		if (&vec.x != 0 && &vec.y != 0)
 		{
@@ -31,12 +31,12 @@ struct Vector2
 		return *this;
 	}
 
-	Vector2& operator ->()
+	Vector2* operator ->()
 	{
-		return *this;
+		return this;
 	}
 
-	const Vector2& operator +(const Vector2& vec)
+	Vector2 operator +(const Vector2& vec)
 	{
 		return Vector2(x + vec.x, y + vec.y);
 	}
@@ -47,16 +47,16 @@ struct Vector2
 		y += vec.y;
 	}
 
-	Vector2& operator -(const Vector2 vec)
+	Vector2 operator -(const Vector2 vec)
 	{
 		if (&vec.x != 0 && &vec.y != 0)
 			return *this - vec;
 		return *this;
 	}
 
-	Vector2& operator /(const Vector2 vec)
+	Vector2 operator /(const Vector2 vec)
 	{
-		if (&vec.x != 0 && &vec.y != 0)
+		if (&vec.x != 0 && vec.y != 0)
 			return *this / vec;
 		return *this;
 	}
