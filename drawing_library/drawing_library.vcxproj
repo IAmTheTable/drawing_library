@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="drawing\drawing.cpp" />
     <ClCompile Include="helpers\math\math.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>

@@ -7,7 +7,6 @@ namespace drawing
 	class drawing
 	{
 	public:
-		template<class T>
-		bool draw_circle()
+		bool draw_circle(Vector2 position, int radius);
 	};
 }
