@@ -62,5 +62,5 @@ struct Vector2
 	}
 
 	Vector2(int x, int y) : x(x), y(y) {};
-	Vector2(LONG x, LONG y) : x(static_cast<int>(x)), y(static_cast<int>(y)) {};
+	Vector2(long x, long y) : x(static_cast<int>(x)), y(static_cast<int>(y)) {};
 };
